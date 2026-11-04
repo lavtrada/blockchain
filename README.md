@@ -30,10 +30,6 @@ A simple lottery smart contract written in Solidity (`0.8.0`).
 
 ## Notes
 
-- `getBalance()` has a typo (`manage`, smart quotes, stray `r`) that stops it compiling. It should be:
-  ```solidity
-  require(msg.sender == manager, "You are not the manager");
-  ```
 - The randomness can be predicted and influenced by miners/validators. It's fine for learning, not for real money. Use something like Chainlink VRF in production.
 
 ## License

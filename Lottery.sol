@@ -19,7 +19,7 @@ contract Lottery{
     }
 
     function getBalance() public view returns(uint){
-        require(msg.sender == manage,”You are not the manager”r);
+        require(msg.sender == manager, "You are not the manager");
         return address(this).balance;
     }
 
